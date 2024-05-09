@@ -1,0 +1,107 @@
+.hero-contact {
+	background-image: url("../../assets/usafi1.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	height: 85vh;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1; /* Adjust as needed */
+}
+
+.hero-contact::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.4) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	z-index: 2;
+}
+.heroo-text {
+	text-align: center;
+	max-width: 800px;
+	font-weight: 900;
+	text-transform: uppercase;
+	z-index: 90;
+}
+.heroo-text h4 {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 5%;
+}
+.contact-col {
+	flex-basis: 48%;
+	padding: 20px 20px;
+}
+.text {
+	margin-bottom: 15%;
+}
+.contact-col ul li {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+.contact-col img {
+	width: 30px;
+	margin-right: 10px;
+}
+.contact-col p {
+	line-height: 1.8;
+}
+.contact-col form label {
+	font-weight: 500;
+}
+.contact-col form input,
+.contact-col form textarea {
+	display: block;
+	width: 100%;
+	background: #ebeaea;
+	padding: 15px;
+	border: 0;
+	outline: 0;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	resize: none;
+}
+.contact-col span {
+	display: block;
+	margin: 20px 0;
+}
+/*---media query---*/
+
+/* Styles for larger mobile devices*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.contact-col {
+		flex-basis: 100%;
+	}
+}
+
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.contact-col {
+		flex-basis: 100%;
+	}
+	.heroo-text h4 {
+		padding-left: 16%;
+	}
+}

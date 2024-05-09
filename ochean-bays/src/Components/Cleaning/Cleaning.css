@@ -1,0 +1,375 @@
+.cleaning {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: url("../../assets/hero-cleaning.jpg");
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ffff;
+	height: 85vh;
+	width: 100%;
+	text-align: start;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.hero-cleaning {
+	z-index: 50;
+	font-weight: 700;
+}
+.hero-cleaning h1,
+.hero-cleaning h4 {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: capitalize;
+}
+.hero-cleaning p {
+	padding-left: 20px;
+	padding-right: 50%;
+}
+.cleaning-about p {
+	line-height: 1.7;
+	padding: 10px 20px;
+}
+/* Slider container */
+.slider-container {
+	background-image: url(../../assets/prodclean.jpg);
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: multiply;
+	object-fit: cover;
+	color: #fff;
+	position: relative;
+}
+.cleaning-slider {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	z-index: 60;
+	width: 100%;
+	height: 100%;
+}
+.cleaning-slider h3 {
+	text-transform: uppercase;
+}
+.cleaning-services {
+	display: flex !important;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.cleaning-pic {
+	flex-basis: 45%;
+	width: 100%;
+	height: 100%;
+}
+.cleaning-pic img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.service-des {
+	margin-top: 20px;
+	flex-basis: 50%;
+}
+
+.slider-container h2 {
+	text-align: start;
+}
+.slider-container h3 {
+	text-align: start;
+	margin-left: -10px;
+}
+.service-des {
+	margin-top: -10px;
+}
+.slick-dots li button {
+	background-color: var(--blue) !important;
+	border-radius: 50%;
+}
+.slick-dots li.slick-active button {
+	background-color: var(--blue) !important;
+}
+.action {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.action div {
+	background: var(--blue);
+	padding: 20px;
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+}
+.action p {
+	text-align: center;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 400;
+}
+.action h3 {
+	font-weight: 700;
+}
+.action div:hover {
+	background-color: var(--red2);
+	transform: scale(1.02);
+	color: #fff;
+}
+
+.expertise-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.cl h2 {
+	font-weight: 800;
+	text-align: start;
+	overflow-x: hidden;
+}
+.cl h5 {
+	color: var(--blue);
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 10px;
+	margin-top: 5%;
+}
+.cl h5,
+.cl h2 {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.expertise {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 100%;
+	z-index: 100;
+	margin-left: 20%;
+}
+.expertise img {
+	max-width: 100px;
+	border-radius: 50%;
+}
+.expertise h3 {
+	text-align: start;
+	font-weight: 600;
+}
+.expertise p {
+	margin-top: 5%;
+	padding-left: 20px;
+}
+.expertise-empty {
+	background-color: var(--red2);
+	height: 500px;
+	min-width: 500px;
+	z-index: -10;
+	border-radius: 50%;
+}
+/*--gallery container--*/
+
+.cleaning-gallery h2 {
+	color: var(--blue);
+	text-align: start;
+	margin-top: 5%;
+	margin-left: -10%;
+}
+.cleaning-gallery img:hover {
+	transform: scale(1.02);
+}
+/*mmedia query*/
+/* Styles for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.cleaning-services {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	.service-des {
+		margin: 20px;
+	}
+
+	.cleaning-pic img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 20px;
+	}
+	.action {
+		height: 150px;
+		margin-top: 50px;
+	}
+	.action p {
+		padding: 10px;
+		font-size: 16px;
+	}
+	.action h3 {
+		font-size: 25px;
+	}
+	.expertise-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.expertise {
+		margin-left: 80%;
+		padding: 10px 100px;
+		z-index: 50;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+	}
+	.expertise p {
+		margin-right: -50%;
+		width: 100%;
+	}
+	.expertise img {
+		margin-top: -35%;
+	}
+	.expertise h3 {
+		margin-right: -50%;
+	}
+	.client-list {
+		padding: 0 50px;
+	}
+	.expertise-empty {
+		margin-right: 80%;
+		height: 400px;
+		min-width: 400px;
+	}
+}
+/* Styles for larger mobile devices*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.cleaning-services {
+		flex-direction: column;
+	}
+	.service-des {
+		margin: 20px;
+	}
+	.action {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+	}
+	.action div {
+		padding: 10px;
+		height: 150px;
+	}
+	.action h3 {
+		text-align: center;
+	}
+	.expertise-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.expertise {
+		margin-left: 60%;
+		padding: 10px 100px;
+		z-index: 50;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+	}
+	.expertise p {
+		margin-right: -50%;
+		width: 100%;
+	}
+	.expertise img {
+		margin-top: -35%;
+	}
+	.expertise h3 {
+		margin-right: -50%;
+	}
+
+	.expertise-empty {
+		margin-right: 100%;
+		height: 300px;
+		min-width: 300px;
+	}
+	.hero-cleaning h1,
+	.hero-cleaning h4,
+	.hero-cleaning p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.cleaning-services {
+		flex-direction: column;
+	}
+	.hero-cleaning h1,
+	.hero-cleaning h4,
+	.hero-cleaning p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.service-des {
+		margin: 20px;
+	}
+	.action {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+	}
+	.action div {
+		padding: 10px;
+		height: 150px;
+	}
+	.action h3 {
+		text-align: center;
+	}
+
+	.expertise-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.expertise {
+		margin-left: 70%;
+		padding: 10px 100px;
+		z-index: 50;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+	}
+	.expertise p {
+		margin-right: -60%;
+		width: 100%;
+	}
+	.expertise img {
+		margin-top: -35%;
+		max-width: 70px;
+		border-radius: 50%;
+	}
+	.expertise h3 {
+		margin-right: -50%;
+	}
+	.client-list {
+		padding-left: 100px;
+	}
+	.expertise-empty {
+		margin-right: 60%;
+	}
+}

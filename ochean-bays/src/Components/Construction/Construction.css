@@ -1,0 +1,167 @@
+.main-construction h2 {
+	font-weight: 700;
+	overflow-x: hidden;
+}
+.main-construction p {
+	padding: 10px 20px;
+}
+.main-construction div {
+	margin-top: 5%;
+}
+.construction {
+	background-color: rgba(0, 0, 0, 0.3);
+	background-image: url("../../assets/heroconstruction.jpeg");
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ffff;
+	height: 80vh;
+	width: 100%;
+	text-align: start;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+
+.choose-construction {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.choose-construction img {
+	width: 50px;
+	border-radius: 50%;
+	margin: 20px;
+	background: var(--gray);
+}
+.chs {
+	display: flex;
+	align-items: start;
+	padding: 20px;
+	height: 250px;
+	width: 400px;
+	margin-top: -10% !important;
+}
+.chs p {
+	padding-left: 30px 20px;
+}
+.chs:first-child,
+.chs:last-child {
+	background: var(--blue);
+}
+
+.chs:nth-child(2) {
+	background: var(--red2);
+}
+.construction-services {
+	background-color: var(--gray);
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+}
+
+.chs:hover {
+	transform: scale(1.05);
+}
+.construction-services div {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 10px;
+	margin: 10px;
+}
+.construction-services h3 {
+	font-size: 30px;
+	text-align: center;
+}
+.construction-services div:hover {
+	transform: scale(1.05);
+}
+.construction-services div:nth-child(4),
+.construction-services div:last-child {
+	margin-top: 5%;
+}
+.construction-services img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+/*mmedia query*/
+/* Styles for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.choose-construction {
+		display: flex;
+	}
+	.chs {
+		height: 260px;
+		width: 240px;
+	}
+	.chs p {
+		padding: 0;
+		margin-top: -10px;
+	}
+	.choose-construction img {
+		width: 30px;
+		margin-left: 5px;
+		margin-top: -10px;
+	}
+	.construction-services {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+	}
+}
+/* Styles for larger mobile devices*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.choose-construction {
+		display: flex;
+		flex-direction: column;
+	}
+	.chs {
+		height: 200px;
+		width: 400px;
+		padding: 5px;
+	}
+	.construction-services {
+		display: flex;
+		flex-direction: column;
+	}
+	.construction-services h3 {
+		font-size: 25px;
+		padding: 10px 0;
+	}
+	.construction-services img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.choose-construction {
+		display: flex;
+		flex-direction: column;
+	}
+	.chs {
+		height: 200px;
+		width: 300px;
+		padding: 5px;
+	}
+	.construction-services {
+		display: flex;
+		flex-direction: column;
+	}
+	.construction-services img {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+	}
+	.construction-services h3 {
+		font-size: 20px;
+		padding: 10px 0;
+	}
+}

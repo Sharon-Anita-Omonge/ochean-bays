@@ -1,0 +1,210 @@
+.borehole h2 {
+	text-align: center;
+}
+.borehole {
+	overflow-x: hidden;
+}
+.drill {
+	background-color: rgba(0, 0, 0, 0.1);
+	background-image: url("../../assets/borehole2.jpeg");
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ffff;
+	height: 85vh;
+	width: 100%;
+	text-align: start;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.hero-drill {
+	z-index: 50;
+	font-weight: 700;
+	padding-right: 40%;
+}
+
+.drill-choose span {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.drill-choose ul li {
+	line-height: 1.6;
+	margin-left: 30px;
+	padding: 10px;
+}
+.borehole-sustain {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+.sustain-left {
+	width: 40%;
+}
+.sustain-right {
+	width: 56%;
+}
+.sustain-left img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.about-borehole {
+	margin-top: 5%;
+}
+.sustain-right h3 {
+	font-weight: 500;
+	text-align: start;
+}
+.video-container p {
+	font-style: italic;
+	color: var(--blue);
+}
+.borehole-video {
+	width: 500px;
+	height: 350px;
+	object-fit: cover;
+	margin-top: 5%;
+	padding: 20px;
+}
+.borehole-procedure {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+}
+.borehole-procedure img {
+	width: 100%;
+	height: 100%;
+}
+
+.drill-offer img {
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
+}
+.drill-offer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.drill-offer div {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 10px;
+	width: 450px;
+	height: 670px;
+}
+.drill-offer div:hover {
+	transform: scale(1.05);
+}
+.drill-offer div p,
+.drill-offer h4 {
+	padding: 10px;
+}
+.borehole-gallery img {
+	width: 300px;
+	height: 240px;
+	object-fit: cover;
+	margin: 3px;
+	cursor: pointer;
+}
+.main-video h3 {
+	color: var(--blue);
+	font-weight: 600;
+}
+
+/*mmedia query*/
+/* Styles for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.borehole-sustain h2 {
+		font-size: 33px;
+	}
+	.sustain-left img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+	}
+	.sustain-left {
+		width: 48%;
+	}
+	.sustain-right {
+		width: 46%;
+	}
+	.about-borehole h3 {
+		font-size: 20px !important;
+	}
+}
+/* Styles for larger mobile devices*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.hero-drill {
+		padding-right: 20%;
+	}
+	.borehole-sustain {
+		flex-direction: column;
+	}
+	.sustain-left {
+		width: 100%;
+	}
+	.sustain-right {
+		width: 100%;
+	}
+	.drill-offer img {
+		width: 350px;
+		height: 300px;
+		object-fit: cover;
+	}
+	.drill-offer div {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		margin: 10px;
+		width: 400px;
+	}
+	.main-video h3 {
+		margin-left: 14%;
+	}
+}
+
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.drill-offer img {
+		width: 230px;
+		height: 200px;
+		object-fit: cover;
+	}
+	.drill-offer div {
+		width: 280px;
+	}
+	.hero-drill {
+		padding-right: 10%;
+	}
+	.borehole-sustain {
+		flex-direction: column;
+	}
+	.sustain-left {
+		width: 100%;
+	}
+	.sustain-right {
+		width: 100%;
+	}
+
+	.borehole-gallery img {
+		width: 280px;
+		height: 240px;
+		object-fit: cover;
+		margin: 3px;
+		cursor: pointer;
+	}
+	.main-video h3 {
+		margin-left: 14%;
+	}
+}

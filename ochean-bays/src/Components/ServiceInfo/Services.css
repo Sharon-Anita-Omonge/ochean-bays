@@ -1,0 +1,205 @@
+.main-service {
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.img {
+	width: 60vw;
+	height: 60vh;
+	object-fit: cover;
+	z-index: 12;
+	position: relative;
+	margin-top: 20px;
+	margin-left: -10%;
+	margin-bottom: 15px;
+}
+.quote {
+	background-color: #9a8f97;
+	padding-top: 40%;
+	z-index: -1;
+	text-align: start;
+	padding-left: 20%;
+	padding-right: 20%;
+	line-height: 1.8;
+	margin-top: -40%;
+	padding-bottom: 20px;
+}
+.quote p {
+	font-style: italic;
+}
+h2 {
+	padding: 20px;
+	text-align: center;
+}
+.para {
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+}
+.image-cont {
+	flex-basis: 40%;
+}
+.text-cont {
+	flex-basis: 56%;
+}
+.comm-image {
+	width: 100%;
+	min-height: 350px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.bore {
+	max-height: 300px;
+}
+.para h3 {
+	font-weight: 600;
+	text-align: start;
+}
+
+.para p {
+	padding: 10px;
+}
+
+.para ul li {
+	margin-left: 40px;
+}
+
+.safety {
+	display: flex;
+	align-items: stretch;
+	color: #fff;
+	padding: 10px 20px;
+	background-color: var(--gray3);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.safety p {
+	padding: 20px;
+	line-height: 1.7;
+}
+.safety img {
+	max-width: 100%;
+	height: 50vh;
+	background-size: cover;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.safety:last-child img {
+	width: 100%;
+	background-size: cover;
+	object-fit: cover;
+}
+.safety-left,
+.safety-right {
+	flex: 1;
+	margin: 5px;
+}
+
+.empty {
+	margin-top: 10px;
+}
+
+/*----media query---*/
+
+/* Styles for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.para {
+		width: 100%;
+		align-items: start;
+	}
+	.image-cont {
+		flex-basis: 45%;
+	}
+	.text-cont {
+		flex-basis: 56%;
+		padding-left: 20px;
+		margin-top: -15px;
+	}
+	.para p {
+		font-size: 15px;
+	}
+	.para h3 {
+		font-size: 25px;
+	}
+	.safety h2 {
+		font-size: 30px;
+	}
+}
+/* Styles for larger mobile devices*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.para p {
+		font-size: 15px;
+	}
+	.para h3 {
+		font-size: 25px;
+	}
+	.image-cont {
+		flex-basis: 100%;
+		order: 2;
+	}
+	.text-cont {
+		flex-basis: 100%;
+	}
+	.para {
+		flex-direction: column;
+	}
+	.safety {
+		flex-direction: column;
+	}
+	.safety-left {
+		flex-basis: 100%;
+	}
+	.safety-right {
+		flex-basis: 100%;
+	}
+}
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.para p {
+		font-size: 15px;
+	}
+	.para h3 {
+		font-size: 25px;
+	}
+	.image-cont {
+		flex-basis: 100%;
+		order: 2;
+	}
+	.text-cont {
+		flex-basis: 100%;
+	}
+	.para {
+		flex-direction: column;
+	}
+	.safety {
+		flex-direction: column;
+	}
+	.safety-left {
+		flex-basis: 100%;
+	}
+	.safety-right {
+		flex-basis: 100%;
+	}
+	.quote {
+		padding-left: 7%;
+		padding-right: 7%;
+		line-height: 1.3;
+		padding-bottom: 20px;
+	}
+	.quote p {
+		font-size: 14px;
+	}
+	.quote blockquote {
+		font-size: 14px;
+	}
+	.img {
+		height: 50vh;
+		margin-left: -5%;
+	}
+}

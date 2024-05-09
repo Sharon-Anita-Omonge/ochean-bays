@@ -1,0 +1,361 @@
+.home {
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.about-home {
+	margin: 0 30px;
+}
+.about-home span {
+	font-weight: 800;
+	margin-right: 10px;
+}
+.hero {
+	position: relative;
+	height: 85vh;
+}
+
+.emp.container,
+.stat.container,
+.serv.container {
+	margin-top: 20px;
+}
+.choose-home img {
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--gray);
+}
+.choose-home {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+.chose-div {
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	padding: 10px;
+	margin: 0 10px;
+}
+.choose-home h3 {
+	text-align: start;
+}
+
+.left-empty {
+	border: 20px solid var(--red2);
+	margin: 20px 0;
+	width: 90%;
+}
+.emp {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.emp h2 {
+	font-weight: 500;
+	font-size: 40px;
+}
+.emp-left {
+	border-left: 8px solid var(--red2);
+	height: 100%;
+}
+
+.serv {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.serv img {
+	width: 100px;
+}
+.serv div {
+	width: calc(33.33% - 20px);
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 1px 3px 5px #ebeaea;
+	box-sizing: border-box;
+	height: auto;
+	text-align: center;
+}
+
+.serv .link-container {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.serv .link-container a {
+	z-index: 2;
+}
+.serv .link-container::after {
+	content: "Learn More...";
+	color: #000;
+	font-weight: 900;
+	position: absolute;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: var(--blue);
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: top 0.5s ease;
+	cursor: pointer;
+	z-index: -1; /* Set the pseudo-element below the actual links */
+}
+
+.serv div:hover::after {
+	top: 0;
+}
+
+.serv div:hover h4,
+.serv div:hover img {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.serv div:nth-child(1),
+.serv div:nth-child(3),
+.serv div:nth-child(5) {
+	background-color: var(--red2);
+	color: #fff;
+}
+.serv div:nth-child(2),
+.serv div:nth-child(4),
+.serv div:nth-child(6) {
+	color: var(--red2);
+}
+
+.cont {
+	position: relative;
+}
+
+.cont h4 {
+	margin-bottom: 5px;
+}
+
+.proj .cont {
+	position: relative;
+	overflow: hidden;
+}
+
+.proj .cont::after {
+	content: "Learn More...";
+	color: white;
+	position: absolute;
+	font-size: 20px;
+	text-transform: uppercase;
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	background: rgba(255, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: top 0.5s ease;
+	font-weight: 900;
+}
+
+.proj .cont::after img {
+	margin-left: 10px;
+}
+
+.proj .cont:hover::after {
+	top: 0;
+}
+.proj .cont:hover h4,
+.proj .cont:hover p,
+.proj .cont:hover img {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.projo {
+	margin-top: 20px;
+	z-index: 0;
+	background-color: var(--gray2);
+
+	background-size: cover;
+	background-position: center;
+}
+.proj {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.proj img {
+	width: 270px;
+	height: 250px;
+	margin: 0;
+	object-fit: cover;
+}
+.proj p {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	z-index: 50;
+	bottom: 5%;
+	padding: 5px 30px;
+	z-index: 45;
+}
+.proj h4 {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: 0;
+	width: 100%;
+	text-align: start;
+	color: #f5f5f5;
+	z-index: 50;
+	bottom: 15%;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding: 5px 30px;
+}
+.proj button:hover {
+	opacity: 0.7;
+}
+
+.reach {
+	background-color: var(--blue);
+	z-index: 20;
+	padding: 50px;
+	margin-left: -5%;
+	text-align: center;
+	box-shadow: 1px 1px 2px #fff;
+	color: #000;
+}
+.build {
+	display: flex;
+	margin: 10px 0;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+}
+
+.prj {
+	background-image: url(../../assets/realestate.jpeg);
+	background-size: cover;
+	background-position: center;
+	width: 500px;
+	height: 500px;
+	color: #fff;
+	text-align: center;
+	flex-basis: 80%;
+}
+.tact {
+	padding-left: 5%;
+}
+.tact ul li {
+	display: flex;
+	align-items: center;
+	margin-right: 2rem;
+	font-weight: 900;
+	margin-left: 15%;
+	text-align: start;
+	padding: 10px;
+}
+
+.tact img {
+	width: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.partner-slider {
+	margin-top: 20px;
+	z-index: 1;
+}
+
+.partner-logos-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.partner-logos-group img {
+	max-width: 100px;
+	margin: 0 10px;
+}
+
+/* Styles for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.emp h2 {
+		font-size: 35px;
+	}
+	.emp {
+		height: 35px;
+	}
+}
+/* Styles for larger mobile devices*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.emp h2 {
+		font-size: 25px;
+	}
+	.emp {
+		height: 25px;
+	}
+	.choose-home {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.serv div {
+		width: calc(50% - 20px);
+		padding: 20px;
+		margin: 10px;
+	}
+	.proj {
+		flex-basis: 100%;
+	}
+	.build {
+		display: flex;
+		flex-direction: column;
+		margin-left: 15%;
+	}
+	.reach {
+		margin-right: 10%;
+	}
+}
+/* Styles for mobile phones in portrait orientation */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.emp h2 {
+		font-size: 20px;
+		padding: 4px;
+	}
+	.emp {
+		height: 25px;
+	}
+	.choose-home {
+		display: flex;
+		flex-direction: column;
+	}
+	.serv div {
+		width: calc(100% - 20px);
+		padding: 20px;
+		margin: 10px;
+	}
+
+	.build {
+		display: flex;
+		flex-direction: column;
+	}
+	.prj {
+		margin-left: 10%;
+	}
+	.reach {
+		margin-left: 1%;
+	}
+}
