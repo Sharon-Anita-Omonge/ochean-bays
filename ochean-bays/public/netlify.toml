@@ -1,9 +1,9 @@
 [build]
   publish = "/build"
   command = "npm run build"
-  base = "/"
+  base = "/ochean-bays"
 
 [[redirects]]
 from = "/*"
 to= "/index.html"
-status = 200
+status = 302
