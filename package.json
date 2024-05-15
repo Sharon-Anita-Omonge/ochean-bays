@@ -1,6 +1,6 @@
 {
 	"name": "ochean-bays",
-	"homepage": "https://github.com/Sharon-Anita-Omonge/ochean-bays.git",
+	"homepage": ".",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
