@@ -21,6 +21,7 @@ import JOCUST from "./Components/Projects/JOCUST";
 import Construction from "./Components/Construction/Construction";
 import Realestate from "./Components/Realestate/Realestate";
 import About from "./Components/About/About";
+import ScrollToTopButton from "./Components/ScrollButton/ScrollButon";
 
 const LazyProjects = React.lazy(() => import("./Components/Projects/Projects"));
 const LazyContact = React.lazy(() => import("./Components/Contact/Contact"));
@@ -79,6 +80,7 @@ function App() {
 
 				<Route path='*' element={<NoMatch />}></Route>
 			</Routes>
+			<ScrollToTopButton />
 			<Footer />
 		</div>
 	);
