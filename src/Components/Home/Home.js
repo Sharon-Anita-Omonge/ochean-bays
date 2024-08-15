@@ -21,7 +21,6 @@ import ober7 from "../../assets/ober7.jpg";
 import culvert3 from "../../assets/culvert3.jpg";
 import TestimonialCarousel from "../Testimonials/Testimonials";
 import StatisticsContainer from "../StatisticsContainer/StatisticsContainer";
-import HeroSlider from "../HeroSlider/HeroSlider";
 import affordable from "../../assets/chmoney.png";
 import material from "../../assets/chmaterial.png";
 import cert from "../../assets/chcert.png";
@@ -32,6 +31,7 @@ import kenyagrace12 from "../../assets/kenyagrace12.jpg";
 import kisumu from "../../assets/kisumu1.jpg";
 import geta from "../../assets/geta3.jpg";
 import gabion from "../../assets/gabion.jpg";
+import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
 	useEffect(() => {
@@ -51,7 +51,7 @@ const Home = () => {
 	return (
 		<div className='home'>
 			<div className='hero'>
-				<HeroSlider />
+				<HeroSection />
 			</div>
 			<div
 				className=' emp container'
@@ -63,10 +63,11 @@ const Home = () => {
 			</div>
 			<div className='container about-home' data-aos='fade-left'>
 				<p>
-					At Ochean Bays Investment Limited, we are dedicated to building a
-					better tomorrow through our comprehensive construction services. Our
-					name has become synonymous with quality and reliability in the
-					industry. We specialize in four key areas:
+					Ochean Bays Limited is your all-in-one partner for reliable and
+					comprehensive solutions. From expert cleaning services and quality
+					construction projects to borehole drilling and premium paint supply,
+					we deliver excellence across every industry we serve. Trust us to
+					elevate your standards and bring your visions to life.
 				</p>
 				<p>
 					<span>Borehole Drilling:</span>
