@@ -53,11 +53,7 @@ const Home = () => {
 			<div className='hero'>
 				<HeroSection />
 			</div>
-			<div
-				className=' emp container'
-				data-aos='fade-right'
-				style={{ marginTop: "5%" }}
-			>
+			<div className=' emp container' style={{ marginTop: "5%" }}>
 				<div className='emp-left'></div>
 				<h2>Mastering Diverse Disciplines</h2>
 			</div>

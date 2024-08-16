@@ -1,6 +1,5 @@
 import React from "react";
 import "./Services.css";
-import Slider from "react-slick";
 import pic11 from "../../assets/pic11.jpg";
 import general from "../../assets/culvertpic1.jpg";
 import kisima from "../../assets/kisima.webp";
@@ -11,44 +10,31 @@ import safety from "../../assets/safety.jpeg";
 import quality from "../../assets/qual.jpg";
 import cleaning from "../../assets/usafi3.jpeg";
 import { Link } from "react-router-dom";
-import paint from "../../assets/indupaiting.jpg";
-import serv from "../../assets/heroserv.jpeg";
-import ind from "../../assets/clean7.jpg";
-import culvert from "../../assets/culvert4.jpeg";
+import excavator from "../../assets/heroconstruction.jpeg";
 import paintimage from "../../assets/paintimage2.jpeg";
 
 const Services = () => {
-	const settings = {
-		dots: false,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		cssEase: "linear",
-		centerMode: false,
-		centerPadding: "0px",
-	};
-
-	const images = [paint, serv, ind, culvert];
 	return (
 		<div className='main-service'>
-			<div className='hero-slider'>
-				<div className='about-hero'>
-					<h1 className='about-title container'>OUR SERVICES</h1>
-					<div className='overlay'></div>
-					<Slider {...settings} tyle={{ overflowX: "hidden" }}>
-						{images.map((image, index) => (
-							<div key={index}>
-								<img
-									src={image}
-									alt={`Slide ${index}`}
-									className='about-image'
-								/>
-							</div>
-						))}
-					</Slider>
+			<div className='hero-container container '>
+				<div className='hero-text '>
+					<h1 className='hero-heading'>
+						The <span className='highlighted'>services</span> We Offer
+					</h1>
+					<p className='hero-subheading'>
+						Our commitment to excellence and innovation positions us as a leader
+						in providing comprehensive solutions tailored to meet our clients'
+						unique needs.
+					</p>
+					<div className='hero-buttons'>
+						<Link to='/contact'>
+							{" "}
+							<button className='hero-btn order-btn'>Contact Us</button>{" "}
+						</Link>
+					</div>
+				</div>
+				<div className='heroo-image'>
+					<img src={excavator} alt='Professional team' />
 				</div>
 			</div>
 			<div className='next'>
@@ -63,10 +49,9 @@ const Services = () => {
 			<div className='container' style={{ marginTop: "3%" }}>
 				<h2>Service with Purpose</h2>
 				<p>
-					At Ochean Bays Limited Company, our vision extends beyond mere
-					construction; we are dedicated to building with intention and
-					diversity in our services. Our expertise encompasses a broad spectrum
-					of offerings, including{" "}
+					At Ochean Bays Limited, we are dedicated to delivering top-notch
+					services across various sectors. Our expertise encompasses a broad
+					spectrum of offerings, including{" "}
 					<span style={{ fontWeight: "600" }}>
 						water works, cleaning services, building construction, and road
 						infrastructure development.

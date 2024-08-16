@@ -1,6 +1,5 @@
 import "./About.css";
 import React, { useState } from "react";
-import Slider from "react-slick";
 import nextred from "../../assets/nextred.png";
 import vision from "../../assets/vision.png";
 import mission from "../../assets/mission.png";
@@ -8,11 +7,7 @@ import objectives from "../../assets/objectives.png";
 import values from "../../assets/values.png";
 import kenyagrace14 from "../../assets/kenyagrace14.jpg";
 import inclusion from "../../assets/inclusion.jpeg";
-import { NavLink } from "react-router-dom";
-import borehole from "../../assets/water.jpeg";
-import road from "../../assets/road6.jpg";
-import clean from "../../assets/clean4.jpg";
-import painting from "../../assets/indupainting3.jpg";
+import { Link, NavLink } from "react-router-dom";
 import AGPO from "../../assets/AGPO.jpg";
 import incorporation from "../../assets/certincorporation.jpg";
 import certkra from "../../assets/certkra.jpg";
@@ -20,22 +15,9 @@ import certprofile from "../../assets/certprofile.jpg";
 import certtaxcompliance from "../../assets/certtaxcompliance.jpg";
 import right from "../../assets/right.png";
 import left from "../../assets/left.png";
+import clean from "../../assets/prodclean.jpg";
 
 const About = () => {
-	const settings = {
-		dots: false,
-		infinite: false,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		cssEase: "linear",
-		centerMode: false,
-		centerPadding: "0px",
-	};
-
-	const images = [borehole, road, clean, painting];
 	const projects = [
 		{
 			name: "Our Accredentials & Incorporation",
@@ -72,21 +54,27 @@ const About = () => {
 	};
 	return (
 		<div className='main-about' style={{ overflowX: "hidden" }}>
-			<div className='hero-slider'>
-				<div className='about-hero'>
-					<h1 className='about-title container'>ABOUT US</h1>
-					<div className='overlay'></div>
-					<Slider {...settings} style={{ overflowX: "hidden" }}>
-						{images.map((image, index) => (
-							<div key={index}>
-								<img
-									src={image}
-									alt={`Slide ${index}`}
-									className='about-image'
-								/>
-							</div>
-						))}
-					</Slider>
+			<div className='hero-container container '>
+				<div className='hero-text '>
+					<h1 className='hero-heading'>
+						About <span className='highlighted'>Ochean Bays Limited</span>{" "}
+						History
+					</h1>
+					<p className='hero-subheading'>
+						Established in 2017 and duly registered with the Registrar of
+						Companies under Kenyan law, we proudly identify as an indigenous
+						company specializing in water works, cleaning services, building
+						construction, and road infrastructure development.
+					</p>
+					<div className='hero-buttons'>
+						<Link to='/contact'>
+							{" "}
+							<button className='hero-btn order-btn'>Contact Us</button>{" "}
+						</Link>
+					</div>
+				</div>
+				<div className='heroo-image'>
+					<img src={clean} alt='Professional team' />
 				</div>
 			</div>
 
@@ -99,14 +87,7 @@ const About = () => {
 			</div>
 			<div className='about container'>
 				<h2>Who Are We</h2>
-				<p>
-					Established in 2017 and duly registered with the Registrar of
-					Companies under Kenyan law, we proudly identify as an indigenous
-					company specializing in water works, cleaning services, building
-					construction, and road infrastructure development. Our commitment to
-					excellence is enshrined in our Memorandum of Understanding and
-					Articles of Association.
-				</p>
+
 				<p>
 					We hold accreditation from key regulatory bodies such as the National
 					Construction Authority (NCA), National Environmental Management

@@ -5,6 +5,7 @@ import email from "../../assets/email.png";
 import address from "../../assets/address.png";
 import fax from "../../assets/fax.png";
 import nextred from "../../assets/nextred.png";
+import contact from "../../assets/contact.png";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
@@ -42,12 +43,29 @@ const Contact = () => {
 	};
 	return (
 		<>
-			<div className='hero-contact'>
-				<div className='heroo-text'>
-					<h4>Contact Us</h4>
-					<h1>How Can We Help?</h1>
+			<div className='hero-container container '>
+				<div className='hero-text '>
+					<h1 className='hero-heading'>
+						Feel Free to <span className='highlighted'>Contact</span> Ochean Bay
+						Limited
+					</h1>
+					<p className='hero-subheading'>
+						For further information about our company and the services we offer,
+						please feel free to email or call us. Ochean Bays Limited is here
+						for you.
+					</p>
+					<div className='hero-buttons'>
+						<Link to='/contact'>
+							{" "}
+							<button className='hero-btn order-btn'>Contact Us</button>{" "}
+						</Link>
+					</div>
+				</div>
+				<div className='heroo-image'>
+					<img src={contact} alt='Professional team' />
 				</div>
 			</div>
+
 			<div className='next'>
 				<Link to='/'>
 					<p>Home</p>
